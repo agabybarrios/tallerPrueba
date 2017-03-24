@@ -1,2 +1,11 @@
 <h1>Gaby Barrios</h1>
 <p>Cambio de vista</p>
+
+<form action="<%= pages_save_user_path %>" method="POST">
+  <input type="text" name="name" value="">
+  <input type="email" name="email" value="">
+  <input type="text" name="age" value="">
+  <input type="submit" name="enviar" value="enviar">
+</form>
+
+<%=flash[:notice]%>
